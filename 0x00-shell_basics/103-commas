@@ -1,3 +1,2 @@
 #!/bin/bash
-ls -1ap | sed '/^\.$/d; /^\.\.$/d' | sed -E -e '/\.$/d; /\.+\//s/$/,/' | tr '\n' ','
-
+ls -amp
