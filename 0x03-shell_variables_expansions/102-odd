@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1 | paste -d, - - | cut -d, -fl
+awk 'FNR==NR{lines[$0]=1;next} !($0 in lines)' file1 file2
